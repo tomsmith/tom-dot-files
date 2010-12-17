@@ -1,0 +1,15 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      profile = default
+      type = Terminal
+      parent = window0
+      command = ""
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
