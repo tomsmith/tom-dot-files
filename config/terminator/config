@@ -1,7 +1,11 @@
 [global_config]
+  tab_position = right
+  close_button_on_tab = False
 [keybindings]
 [profiles]
   [[default]]
+    show_titlebar = False
+    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]
