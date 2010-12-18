@@ -1,0 +1,3 @@
+# put readline into vi mode
+set editing-mode vi
+set keymap vi
