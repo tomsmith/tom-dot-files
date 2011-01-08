@@ -1,6 +1,7 @@
 [global_config]
   tab_position = right
   close_button_on_tab = False
+  scrollbar_position = disabled
 [keybindings]
 [profiles]
   [[default]]
