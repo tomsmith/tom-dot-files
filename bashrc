@@ -100,3 +100,6 @@ fi
 
 # Put bash into VI mode...
 set -o vi
+
+alias ack='ack-grep'
+
