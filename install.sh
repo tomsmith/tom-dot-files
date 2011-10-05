@@ -10,6 +10,7 @@ mv ~/.profile ~/.profile.backup
 mv ~/.screenrc ~/.screenrc.backup
 mv ~/.selected_editor ~/.selected_editor.backup
 mv ~/.inputrc ~/.inputrc.backup
+mv ~/.gitconfig ~/.gitconfig.backup
 
 echo "linking to new dot files..."
 ln -s $sDir/bashrc ~/.bashrc
@@ -19,6 +20,7 @@ ln -s $sDir/profile ~/.profile
 ln -s $sDir/screenrc ~/.screenrc
 ln -s $sDir/selected_editor ~/.selected_editor
 ln -s $sDir/inputrc ~/.inputrc
+ln -s $sDir/gitconfig ~/.gitconfig
 
 echo "dot files installed. huzzah!"
 
