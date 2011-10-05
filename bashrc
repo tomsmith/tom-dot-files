@@ -50,7 +50,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[[01;32m\]\u@\h\[[00m\]:\[[01;34m\]\w\[[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -59,7 +59,7 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="\[]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\]$PS1"
     ;;
 *)
     ;;
@@ -101,5 +101,11 @@ fi
 # Put bash into VI mode...
 set -o vi
 
-alias ack='ack-grep'
+export EC2_PRIVATE_KEY=~/.ssh/pk-protec-ec2.pem
+export EC2_CERT=~/.ssh/protec-ec2.pem
+export EC2_URL=https://eu-west-1.ec2.amazonaws.com
+export EC2_REGION=eu-west-1
 
+alias g=git
+complete -o default -o nospace -F _git g
+PATH="/home/users/tom/Web/tools:$PATH"
