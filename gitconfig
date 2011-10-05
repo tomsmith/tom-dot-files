@@ -1,5 +1,21 @@
 [user]
-	name = takeontom
-	email = tom@takeontom.com
+	name = tomsmith
+	email = tomsmith@protecinnovations.co.uk
 [color]
-	ui = true
+	ui = auto
+[alias]
+    show-ticket = "!sh -c 'git log --grep=\"$0\" --patch-with-stat'"
+    st = !git show-ticket
+    c = commit
+    ch = checkout
+    d = diff
+    b = branch
+    a = add
+    s = status
+    chm = "!sh -c 'git checkout master; git submodule update'"
+
+
+[web]
+	browser = google-chrome
+[mergetool]
+	keepBackup = false
