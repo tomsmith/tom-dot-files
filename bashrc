@@ -106,6 +106,7 @@ export EC2_CERT=~/.ssh/protec-ec2.pem
 export EC2_URL=https://eu-west-1.ec2.amazonaws.com
 export EC2_REGION=eu-west-1
 
+alias ack='ack-grep'
 alias g=git
 complete -o default -o nospace -F _git g
 PATH="/home/users/tom/Web/tools:$PATH"
